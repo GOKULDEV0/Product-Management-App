@@ -1,0 +1,86 @@
+.navbarCustom {
+  background-color: #28a745;
+  box-shadow: 0 4px 8px rgba(40, 167, 69, 0.2);
+  top: 0;
+  z-index: 1000;
+  font-family: "Playfair Display", serif;
+}
+
+.navbar-brand {
+  color: #fff !important;
+  font-size: 1.8rem;
+  font-weight: bold;
+  text-decoration: none;
+}
+
+.navbar-brand:hover {
+  color: #d4f5dd !important;
+}
+
+.nav-link {
+  color: #fff !important;
+  font-size: 1.1rem;
+  margin-left: 1rem;
+  transition: all 0.3s ease;
+  position: relative;
+  border-radius: 10px;
+}
+
+.nav-link.active {
+  background: #ddfbe0;
+  color: #218838 !important;
+}
+
+.nav-link.active:hover {
+  color: #1b5e20 !important;
+}
+
+.nav-link::after {
+  content: '';
+  display: block;
+  width: 0;
+  height: 2px;
+  background: #d4f5dd;
+  transition: width 0.3s ease;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+}
+
+.nav-link:hover::after {
+  width: 100%;
+}
+
+.nav-link:hover {
+  color: #d4f5dd !important;
+}
+
+.cardGreen {
+    border: none;
+    box-shadow: 0 4px 8px rgba(40, 167, 69, 0.2);
+    border-left: 5px solid #28a745;
+    border-right: 5px solid #28a745;
+    transition: 0.3s ease;
+}
+
+.cardGreen:hover {
+    transform: translateY(-2px);
+}
+
+.cardGreen .card-title   {
+    color: #28a745;
+}
+
+
+@media (max-width: 576px) {
+    .editDeleteButton {
+        flex-direction: column;
+        align-items: center;
+        gap: 0.5rem;
+    }
+}
+
+.listBag{
+  height: "100vh";
+  background-color: #d8f3dc;
+}
